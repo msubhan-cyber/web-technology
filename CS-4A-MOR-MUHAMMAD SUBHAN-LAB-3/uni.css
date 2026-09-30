@@ -1,0 +1,126 @@
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial;
+  }
+
+  body {
+      
+      line-height: 1.6;
+      background-color: white;
+      color: black;
+  }
+
+  .university-header {
+      background-color: #002147;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+  }
+
+  .navbar {
+    position: sticky;
+      background-color: #003366;
+      text-align: center;
+  }
+
+  .navbar li {
+      display: inline-block;
+  }
+
+  .navbar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+  }
+
+  .navbar a:hover {
+      background-color: lightblue;
+  }
+
+  .admission-section {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 20px;
+  }
+
+  .admission-section h2 {
+      text-align: center;
+      margin-bottom: 15px;
+  }
+
+  .relative-notice {
+      position: relative;
+      top: 10px;
+      left: 15px;
+      background-color: #e3f2fd;
+      border-left: 5px solid #2196f3;
+      padding: 12px;
+
+  }
+
+  .cards-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 20px;
+  }
+
+  .card {
+      position: relative;
+      background-color: white;
+      width: 31%;
+      min-height: 280px;
+      padding: 25px;
+      margin: 10px 0;
+      border: 2px solid gray;
+      border-radius: 8px;
+  }
+
+  .badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background-color: green;
+      color: white;
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 4px;
+  }
+
+  .fixed-apply-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: red;
+      color: white;
+      padding: 14px 22px;
+      text-decoration: none;
+      border-radius: 50px;
+  }
+
+  .fixed-apply-btn:hover {
+      background-color: black;
+  }
+
+  @media screen and (min-width: 601px),
+  screen and (min-width: 1024px) {
+
+      .cards-container {
+          flex-direction: row;
+      }
+
+      .card {
+          width: 500px;
+          margin: 30px auto;
+          padding: 25px;
+      }
+
+      .navbar li {
+          display: inline-block;
+      }
+  }
